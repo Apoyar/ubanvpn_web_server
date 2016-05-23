@@ -5,11 +5,11 @@
     <form action='submit.php' method='POST'>
       <div class="form-group">
         <label for='user' class='sr-only'>Username:</label>
-        <input class="form-control" id='user' type='text' name='user' placeholder="Username">
+        <input class="form-control" id='user' type='text' name='user' placeholder="Username" required>
       </div><br>
       <div class="form-group">
         <label for='pass' class='sr-only'>Password:</label>
-        <input class="form-control" id='pass' type='password' name='pass' placeholder="Password">
+        <input class="form-control" id='pass' type='password' name='pass' placeholder="Password" required>
       </div>
       <br>
       <button class='btn btn-default btn-block' type='submit'>Log-in</button><br>
@@ -21,6 +21,7 @@
           <strong>Warning!</strong> '.$_SESSION['flash'].'</div>';
         }
       ?>
+      <center><a href='#'>I bought this device at a retailer and don't have a subscription.</a></center>
     </form>
   </div>
 </div>
